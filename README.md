@@ -2,10 +2,10 @@
 
 This is my Link Mint Cinnamon Build Script. I wrote this script strictly for me, for the sole purpose of rebuilding my system just in case. Just in case I receive a new computer, recycled computer or just because, can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script via the following people including my finishbuild script...
 
->**Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
->**DasGeek** - https://github.com/dasgeekchannel/AutoInstallBashScripts
->**Joe Collins** (EzeeLinux) - https://github.com/EzeeLinux
->**Romano Woodfolk** - https://github.com/woodfolk/linux-mint-cinnamon-build
+**Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
+**DasGeek** - https://github.com/dasgeekchannel/AutoInstallBashScripts
+**Joe Collins** (EzeeLinux) - https://github.com/EzeeLinux
+**Romano Woodfolk** - https://github.com/woodfolk/linux-mint-cinnamon-build
 
 This scipt is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility to an harm to you system or data. Read through the script and edit way you want or don't want installed. I have to admit although there are ton of applications being installed, I practically live in a browser and should be running a chromebook.
 
