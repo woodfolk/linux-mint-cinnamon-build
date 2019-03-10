@@ -1,2 +1,19 @@
+EULA Installs:
 EULA Move Microsoft Fonts Installs to EULA Installs on Master Script
-Fix install errors 
+
+
+CODE FIXES:
+CODE Fix O-prep-configurations-v1.sh mkdir missing (25) (26)
+CODE Fix O-prep-configurations-v1.sh chown folder and files created
+			sudo chown $USER.$USER .*
+			sudo chown $USER.$USER *
+
+
+   
+CODE Fix 1-install-core-utilities-v1.sh remove latex-beamer install command 
+
+
+README FIXES
+README Fix correct name format of credits
+README Fix change apt to apt-get
+
