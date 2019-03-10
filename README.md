@@ -2,10 +2,10 @@
 
 This is my Link Mint Cinnamon Build Script. I wrote this script strictly for me, for the sole purpose of rebuilding my system just in case. Just in case I receive a new computer, recycled computer or just because, can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script via the following people including my finishbuild script...
 
->     **Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
->     **DasGeek** - https://github.com/dasgeekchannel/AutoInstallBashScripts
->     **Joe Collins** (EzeeLinux) - https://github.com/EzeeLinux
->     **Romano Woodfolk** - https://github.com/woodfolk/linux-mint-cinnamon-build
+**Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon 
+**DasGeek** - https://github.com/dasgeekchannel/AutoInstallBashScripts 
+**Joe Collins** (EzeeLinux) - https://github.com/EzeeLinux 
+**Romano Woodfolk** - https://github.com/woodfolk/linux-mint-cinnamon-build 
 
 This scipt is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility to an harm to you system or data. Read through the script and edit way you want or don't want installed. I have to admit although there are ton of applications being installed, I practically live in a browser and should be running a chromebook.
 
@@ -45,7 +45,7 @@ The installation scripts used to install software will be installed via the term
     6-install-misc-apps-v*.sh                   # Miscellaneous Applications
     7-install-ppa-apps-v*.sh                    # Personal Package Archive Installs
     8-install-themes-icons-v*.sh                # Themes and Icons
-    9-install-snap-packages-v*.sh					# SnapCraft and Snap Packages
+    9-install-snap-packages-v*.sh				# SnapCraft and Snap Packages
     0-installation-summary-v*-sh                # Summary
     
     
@@ -67,15 +67,15 @@ PPA, GIT and Downloaded Installs
     app-ppa-install-etcher-v*.sh                # Etcher
     app-ppa-install-glances-v*.sh               # Glances
     app-ppa-install-hardcodefixer-v*.sh         # Hardcodefixer
-    app-ppa-install-kodi-v*.sh 						# Kodi
+    app-ppa-install-kodi-v*.sh 					# Kodi
     app-ppa-install-kvm-v*.sh                   # KVM
-    app-ppa-install-lmt-v*.sh							# Laptop Mode Tools
+    app-ppa-install-lmt-v*.sh					# Laptop Mode Tools
     app-ppa-install-mumbler-v*.sh               # Mumbler
     app-ppa-install-neofetch-v*.sh              # Neofetch
     app-ppa-install-oceanaudio-v*.sh            # Ocean Audio
     app-ppa-install-peek-v*.sh                  # Peek
     app-ppa-install-pia-v*.sh                   # PIA
-    app-ppa-install-pithos-v*.sh 					# Pithos
+    app-ppa-install-pithos-v*.sh 				# Pithos
     app-ppa-install-powershell-v*.sh            # Powershell
     app-ppa-install-python-v*.sh                # Python
     app-ppa-install-redshift-v*.sh              # Redshift
@@ -89,7 +89,7 @@ PPA, GIT and Downloaded Installs
     app-ppa-install-sublime-v*.sh               # Sublime Text Editor
     app-ppa-install-synology-v*.sh              # Synology
     app-ppa-install-teamviewer-v*.sh            # Teamviewer
-    app-ppa-install-tlp-v*.sh 						# TLP
+    app-ppa-install-tlp-v*.sh 					# TLP
     app-ppa-install-virtualbox-v*.sh            # Virtualbox
     app-ppa-install-vivaldi-snapshot-v*.sh      # Vivaldi-Snapshot
     app-ppa-install-vivaldi-stable-v*.sh        # Vivaldi-Stable
@@ -98,7 +98,7 @@ PPA, GIT and Downloaded Installs
     app-ppa-install-zsh-v1.sh                   # zsh
     ...
 
-    app-snap-install-packages-v1.sh                # SnapCraft and SNAP Packages
+    app-snap-install-packages-v1.sh             # SnapCraft and SNAP Packages
 
 Themes and Icons:
     install-arc-flatabulous-theme-v1.sh
@@ -114,7 +114,7 @@ Themes and Icons:
     ...
 
 Other Files:
-    bashrc                                                            # ParrotOS .bashrc file Terminal
+    bashrc                                      # ParrotOS .bashrc file Terminal
     ...
 
 Below are discriptions about the Icons and Themes scripts forked from Erik DuBois Ultimate-Linux-Mint-19-Cinnamon script https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
