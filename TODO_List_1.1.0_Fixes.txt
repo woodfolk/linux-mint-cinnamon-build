@@ -1,5 +1,7 @@
-EULA Installs:
-EULA Move Microsoft Fonts Installs to EULA Installs on Master Script
+Interactive Installs:
+EULA Move Microsoft Fonts Installs to EULA Installs on Master Script 1-install-core-utilities-v1.sh
+Config Move Wireshark 2-install-cin-apps-v1-sh
+Config Move VirtualBox 6-install-misc-apps-v1-sh
 
 
 CODE FIXES:
@@ -7,22 +9,25 @@ CODE Fix O-prep-configurations-v1.sh mkdir missing (25) (26)
 CODE Fix O-prep-configurations-v1.sh chown folder and files created
 			sudo chown $USER.$USER .*
 			sudo chown $USER.$USER *
-
-
    
 CODE Fix 1-install-core-utilities-v1.sh remove latex-beamer install command 
 CODE Fix 1-install-core-utilities-v1.sh remove unetbootin install command
+
 CODE Fix 2-install-av-apps-v1-sh remove libgs12 install command
 CODE Fix 2-install-av-apps-v1-sh added libgslcbla0:i386 install command
 CODE Fix 2-install-av-apps-v1-sh added libgslcbla0 install command
 CODE Fix 2-install-av-apps-v1-sh remove telegram-cli install command
 
+CODE Fix 3-install-cin-apps-v1-sh remove brave web browser install command
+CODE Fix 3-install-cin-apps-v1-sh remove slack-desktop install command
 
 
 
 APP INSTALL NEEDED FIXES:
 Unetbootin
-
+Telegram 
+Brave Web Browser
+Slack
 
 
 
