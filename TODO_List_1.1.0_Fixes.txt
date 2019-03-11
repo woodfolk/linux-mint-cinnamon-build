@@ -13,6 +13,9 @@ CODE Fix O-prep-configurations-v1.sh chown folder and files created
 CODE Fix 1-install-core-utilities-v1.sh remove latex-beamer install command 
 CODE Fix 1-install-core-utilities-v1.sh remove unetbootin install command
 CODE Fix 2-install-av-apps-v1-sh remove libgs12 install command
+CODE Fix 2-install-av-apps-v1-sh added libgslcbla0:i386 install command
+CODE Fix 2-install-av-apps-v1-sh added libgslcbla0 install command
+CODE Fix 2-install-av-apps-v1-sh remove telegram-cli install command
 
 
 
