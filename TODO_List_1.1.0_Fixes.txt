@@ -21,6 +21,7 @@ CODE Fix 2-install-av-apps-v1-sh remove telegram-cli install command
 CODE Fix 3-install-cin-apps-v1-sh remove brave web browser install command
 CODE Fix 3-install-cin-apps-v1-sh remove slack-desktop install command
 
+CODE Fix 7-install-ppa-apps-v1.sh removed app-ppa-install-cinelerra-v1.sh
 
 
 APP INSTALL NEEDED FIXES:
@@ -29,6 +30,9 @@ Telegram
 Brave Web Browser
 Slack
 
+
+Broken APP-PPA-INSTALLS
+7-install-ppa-apps-v1.sh
 
 
 README FIXES
