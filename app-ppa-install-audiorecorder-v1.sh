@@ -5,7 +5,7 @@ set -e
 # Name:			app-ppa-install-audiorecorder-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 26, 2019
-# Modified:		March 06, 2019 (110100100)
+# Modified:		March 13, 2019 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -29,7 +29,7 @@ sudo add-apt-repository ppa:audio-recorder/ppa
 echo -e "------------------------------------------------------------------"
 echo -e " Updating Repository Cache...                                     "
 echo -e "------------------------------------------------------------------"
-sudo apt-get update
+sudo apt-get update -y
 
 
 echo -e "------------------------------------------------------------------"
