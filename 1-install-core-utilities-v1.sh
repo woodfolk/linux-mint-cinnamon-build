@@ -5,7 +5,7 @@ set -e
 # Name:			1-install-core-utilities-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 24, 2019
-# Modified:		March 01, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -47,14 +47,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
-echo -e "..installing Microsoft Fonts..."
-echo -e "------------------------------------------------------------------"
-dpkg -l | grep -qw ttf-mscorefonts-installer ||
-			sudo apt-get install -y ttf-mscorefonts-installer				# ttf-mscorefonts-installer
-
-
-echo -e ""; clear; echo -e ""														# clear Screen
-echo -e "------------------------------------------------------------------"
 echo -e "..installing Utilities and System Tools..."
 echo -e "------------------------------------------------------------------"
 sudo apt-get install -y \gcc \make linux-headers-$(uname -r) dkms
@@ -74,8 +66,8 @@ dpkg -l | grep -qw gparted || sudo apt-get install -y gparted			# gparted
 dpkg -l | grep -qw grsync || sudo apt-get install -y grsync				# grsync
 dpkg -l | grep -qw gufw || sudo apt-get install -y gufw					# gufw
 dpkg -l | grep -qw hardinfo || sudo apt-get install -y hardinfo		# hardinfo
-dpkg -l | grep -qw latex-beamer ||  
-			sudo apt-get install -y latex-beamer    							# latex-beamer
+##dpkg -l | grep -qw latex-beamer ||  
+##			sudo apt-get install -y latex-beamer    							# latex-beamer
 dpkg -l | grep -qw meld || sudo apt-get install -y meld					# meld
 dpkg -l | grep -qw mpack || sudo apt-get install -y mpack				# mpack
 dpkg -l | grep -qw p7zip-rar || sudo apt-get install -y p7zip-rar		# p7zip-rar
@@ -96,7 +88,8 @@ dpkg -l | grep -qw sharutils || sudo apt-get install -y sharutils		# sharutils
 dpkg -l | grep -qw synapse || sudo apt-get install -y synapse			# synapse
 
 dpkg -l | grep -qw texmaker ||  sudo apt-get install -y texmaker     # texmaker
-dpkg -l | grep -qw unetbootin || sudo apt-get install -y unetbootin	# unetbootin
+##dpkg -l | grep -qw unetbootin || 
+##			sudo apt-get install -y unetbootin									# unetbootin
 dpkg -l | grep -qw uudeview || sudo apt-get install -y uudeview		# uudeview
 #dpkg -l | grep -qw wicd || sudo apt-get install -y wicd					# wicd
 dpkg -l | grep -qw xrdp || sudo apt-get install -y xrdp					# xrdp

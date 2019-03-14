@@ -5,7 +5,7 @@ set -e
 # Name:			2-install-av-apps-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 25, 2019
-# Modified:		March 01, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website:	 	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -29,8 +29,11 @@ dpkg -l | grep -qw easytag || sudo apt-get install -y easytag			# easytag
 dpkg -l | grep -qw ffmpeg || sudo apt-get install -y ffmpeg				# ffmpeg
 dpkg -l | grep -qw gtkpod || sudo apt-get install -y gtkpod				# gtkpod
 dpkg -l | grep -qw guvcview || sudo apt-get install -y guvcview		# guvcview
-dpkg -l | grep -qw libgsl2 || sudo apt-get install -y libgsl2			# libgsl2
-
+##dpkg -l | grep -qw libgsl2 || sudo apt-get install -y libgsl2		# libgsl2
+dpkg -l | grep -qw libgslcbla0 || 
+			sudo apt-get install -y libgslcbla0		 							# libgslcbla0
+dpkg -l | grep -qw libgslcbla0:i386 || 
+			sudo apt-get install -y libgslcbla0:i386 							# libgslcbla0:i386
 dpkg -l | grep -qw libguvcview ||
 			sudo apt-get install -y libguvcview							      # libguvcview
 
@@ -38,7 +41,7 @@ dpkg -l | grep -qw handbrake || sudo apt-get install -y handbrake		# handbrake
 dpkg -l | grep -qw kazam || sudo apt-get install -y kazam				# kazam
 dpkg -l | grep -qw kdenlive || sudo apt-get install -y kdenlive		# kdenlive
 dpkg -l | grep -qw kino || sudo apt-get install -y kino					# kino
-dpkg -l | grep -qw libgsl2 || sudo apt-get install -y libgsl2			# libgsl2
+##dpkg -l | grep -qw libgsl2 || sudo apt-get install -y libgsl2		# libgsl2
 
 dpkg -l | grep -qw libguvcview ||
 			sudo apt-get install -y libguvcview							      # libguvcview
@@ -69,8 +72,8 @@ dpkg -l | grep -qw sound-juicer ||
 dpkg -l | grep -qw telegram-desktop ||
 			sudo apt-get install -y telegram-desktop							# telegram-desktop
 
-dpkg -l | grep -qw telegram-cli ||
-			sudo apt-get install -y telegram-cli								# telegram-desktop
+##dpkg -l | grep -qw telegram-cli ||
+##			sudo apt-get install -y telegram-cli								# telegram-cli
 
 dpkg -l | grep -qw xmms2-plugin-all ||
 			sudo apt-get install -y xmms2-plugin-all							# xmms2-plugin-all

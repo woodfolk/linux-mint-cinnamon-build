@@ -5,7 +5,7 @@ set -e
 # Name:			0-install-interactive-apps-v1.sh
 # Author:		Romano Woodfolk
 # Created:		March 13, 2019
-# Modified:		March 13, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -19,9 +19,17 @@ echo -e " Installing EULA and Interactive Installs..."
 echo -e "------------------------------------------------------------------"
 
 
-EULA Move Microsoft Fonts Installs to EULA Installs on Master Script 1-install-core-utilities-v1.sh
+# Microsoft Fonts Install
+echo -e ""; clear; echo -e ""														# clear Screen
+echo -e "------------------------------------------------------------------"
+echo -e "..installing Microsoft Fonts..."
+echo -e "------------------------------------------------------------------"
+dpkg -l | grep -qw ttf-mscorefonts-installer ||
+			sudo apt-get install -y ttf-mscorefonts-installer				# ttf-mscorefonts-installer
 
-Config Move Wireshark 2-install-cin-apps-v1-sh
+
+# Wireshark Install
+
 
 Config Move VirtualBox 6-install-misc-apps-v1-sh
 

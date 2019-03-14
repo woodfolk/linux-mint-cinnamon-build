@@ -5,7 +5,7 @@ set -e
 # Name:			0-prep-configurations-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 04, 2019
-# Modified:		March 09, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website 	: 	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -19,11 +19,12 @@ echo -e "-----------------------------------------------------------------------
 echo -e "creating home sub-folders...                                                     "
 echo -e "---------------------------------------------------------------------------------"
 
+
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"							# icons
 [ -d $HOME"/.themes" ] || mkdir -p $HOME"/.themes"							# themes
 [ -d $HOME"/.fonts" ] || mkdir -p $HOME"/.fonts"							# fonts
-[ -d $HOME"/.backgrounds"] || -p $HOME"/.backgrounds"						# personal wallpaper/backgrounds
-[ -d $HOME"/.ssh"] || -p $HOME"/.ssh"											# ssh key files
+[ -d $HOME"/.backgrounds"] || mkdir -p $HOME"/.backgrounds"				# personal wallpaper/backgrounds
+[ -d $HOME"/.ssh"] || mkdir -p $HOME"/.ssh"									# ssh key files
 
 [ -d $HOME"/Audio" ] || mkdir -p $HOME"/Audio" 								# Audio Files
 [ -d $HOME"/Bin" ] || mkdir -p $HOME"/Bin" 									# custom bin files and scripts
@@ -44,6 +45,13 @@ echo -e "-----------------------------------------------------------------------
 [ -d $HOME"/Videos" ] || mkdir -p $HOME"/Videos" 							# created at install
 [ -d $HOME"/VMs" ] || mkdir -p $HOME"/VMs"			 						# Virtual Machines
 
+
+echo -e ""; clear; echo -e ""														# clear Screen
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Changing directory ownership to $USER                                           "
+echo -e "---------------------------------------------------------------------------------"
+sudo chown $USER.$USER .*
+sudo chown $USER.$USER *
 
 #[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
 
