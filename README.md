@@ -110,6 +110,7 @@ PPA, GIT and Downloaded Installs
     app-snap-install-packages-v1.sh             # SnapCraft and SNAP Packages
 
 Themes and Icons:
+
     install-arc-flatabulous-theme-v1.sh
     install-conky-aureola-v1.sh
     install-gtk-arc-theme-v1.sh
