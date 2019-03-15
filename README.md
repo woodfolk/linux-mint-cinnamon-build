@@ -87,6 +87,7 @@ PPA, GIT and Downloaded Installs
     app-ppa-install-simplenote-v*.sh            # Simplenote
     app-ppa-install-simplescreenrecorder-v*.sh  # Simplescreenrecorder
     app-ppa-install-skype-v*.sh                 # Skype
+    app-ppa-install-slack-v*.sh 						# Slack
     app-ppa-install-spotify-v*.sh               # Spotify
     app-ppa-install-stacer-v*.sh                # Stacer
     app-ppa-install-sublime-v*.sh               # Sublime Text Editor
