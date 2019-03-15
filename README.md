@@ -8,7 +8,7 @@ This is my Link Mint Cinnamon Build Script. I wrote this script strictly for me,
 
 **Joe Collins (EzeeLinux)** - https://github.com/EzeeLinux
 
-**Romano Woodfolk** - https://github.com/woodfolk/linux-mint-cinnamon-build 
+**Romano Woodfolk** - https://github.com/woodfolk/finishbuild
 
 This scipt is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility to an harm to you system or data. Read through the script and edit way you want or don't want installed. I have to admit although there are ton of applications being installed, I practically live in a browser and should be running a chromebook.
 
