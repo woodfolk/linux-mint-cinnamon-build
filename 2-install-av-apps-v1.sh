@@ -69,8 +69,8 @@ dpkg -l | grep -qw smplayer-themes ||
 dpkg -l | grep -qw sound-juicer ||
 			sudo apt-get install -y sound-juicer								# sound-juicer
 
-dpkg -l | grep -qw telegram-desktop ||
-			sudo apt-get install -y telegram-desktop							# telegram-desktop
+##dpkg -l | grep -qw telegram-desktop ||
+##			sudo apt-get install -y telegram-desktop							# telegram-desktop
 
 ##dpkg -l | grep -qw telegram-cli ||
 ##			sudo apt-get install -y telegram-cli								# telegram-cli

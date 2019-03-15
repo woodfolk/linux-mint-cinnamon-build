@@ -5,7 +5,7 @@ set -e
 # Name:			app-ppa-install-brackets-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 18, 2019
-# Modified:		march 09, 2019 (110100100)
+# Modified:		march 14, 2019 (110100100)
 # Version:		1.0.0
 # Website:	 	http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -28,7 +28,7 @@ sudo add-apt-repository ppa:webupd8team/brackets
 echo -e "------------------------------------------------------------------"
 echo -e " Updating Repository Cache...                                     "
 echo -e "------------------------------------------------------------------"
-sudo apt-get update
+sudo apt-get update -y
 
 
 echo -e "------------------------------------------------------------------"

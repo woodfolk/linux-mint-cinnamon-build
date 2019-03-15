@@ -5,7 +5,7 @@ set -e
 # Name:			3-install-cin-apps-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 25, 2019
-# Modified:		March 01, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -19,7 +19,7 @@ echo -e " Installing Communications, Internet and Networking Applications  "
 echo -e "------------------------------------------------------------------"
 sudo apt-get update -y
 
-dpkg -l | grep -qw brave || sudo apt-get install -y brave				# brave
+##dpkg -l | grep -qw brave || sudo apt-get install -y brave				# brave
 dpkg -l | grep -qw etherape || sudo apt-get install -y etherape 		# etherape
 dpkg -l | grep -qw etherape-data ||
 			sudo apt-get install -y etherape-data 								# etherape-data
@@ -35,7 +35,7 @@ dpkg -l | grep -qw putty-doc || sudo apt-get install -y putty-doc 	# putty-doc
 dpkg -l | grep -qw putty-tools ||
 			sudo apt-get install -y putty-tools 								# putty-tools
 dpkg -l | grep -qw pterm || sudo apt-get install -y pterm				# pterm
-dpkg -l | grep	-qw slack || sudo apt-get install -y slack				# slack
+##dpkg -l | grep	-qw slack || sudo apt-get install -y slack				# slack
 dpkg -l | grep	-qw slack-desktop ||
 			sudo apt-get install -y slack-desktop								# slack-desktop
 
@@ -72,7 +72,7 @@ dpkg -l | grep -qw vinagre || sudo apt-get install -y vinagre 			# vinagre
 dpkg -l | grep -qw vnstat || sudo apt-get install -y vnstat 			# vnstat
 dpkg -l | grep -qw vnstati || sudo apt-get install -y vnstati 			# vnstati
 #dpkg -l | grep -qw wicd || sudo apt-get install -y wicd 				# wicd
-dpkg -l | grep -qw wireshark || sudo apt-get install -y wireshark 	# wireshark
+##dpkg -l | grep -qw wireshark || sudo apt-get install -y wireshark 	# wireshark
 #dpkg -l | grep -qw xchat || sudo apt-get install -y xchat 				# xchat
 dpkg -l | grep -qw zenmap || sudo apt-get install -y zenmap			   # zenmap
 

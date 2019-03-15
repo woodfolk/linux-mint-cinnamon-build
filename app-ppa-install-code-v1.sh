@@ -51,7 +51,7 @@ echo -e " Updating repository database..."
 echo -e "------------------------------------------------------------------"
 sudo apt-get update -y
 
-# Install PowerShell
+# Install VS Code
 echo -e "------------------------------------------------------------------"
 echo -e " Installing Microsoft Visual Studio Code..."
 echo -e "------------------------------------------------------------------"

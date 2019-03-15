@@ -67,11 +67,11 @@ dpkg -l | grep -qw tilda || sudo apt-get install -y tilda   			# tilda
 dpkg -l | grep -qw tilix || sudo apt-get install -y tilix   			# tilix
 dpkg -l | grep -qw upnp-router-control ||
 			sudo apt-get install -y upnp-router-control    					# upnp-router-control
-dpkg -l | grep -qw virtualbox || sudo apt-get install -y virtualbox  # virtualbox
-dpkg -l | grep -qw virtualbox-ext-pack ||
-			sudo apt-get install -y virtualbox-ext-pack   					# virtualbox-ext-pack
-dpkg -l | grep -qw virtualbox-guest-additions-iso ||
-			sudo apt-get install -y virtualbox-guest-additions-iso		# virtualbox-guest-additions-iso
+##dpkg -l | grep -qw virtualbox || sudo apt-get install -y virtualbox  # virtualbox
+##dpkg -l | grep -qw virtualbox-ext-pack ||
+##			sudo apt-get install -y virtualbox-ext-pack   					# virtualbox-ext-pack
+##dpkg -l | grep -qw virtualbox-guest-additions-iso ||
+##			sudo apt-get install -y virtualbox-guest-additions-iso		# virtualbox-guest-additions-iso
 dpkg -l | grep -qw vde2 || sudo apt-get install -y vde2					# vde2
 
 

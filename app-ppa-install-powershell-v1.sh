@@ -5,7 +5,7 @@ set -e
 # Name:			app-ppa-install-powershell-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 30, 2019
-# Modified:		March 09, 2019 (110100100)
+# Modified:		March 14, 2019 (110100100)
 # Version:		1.0.0
 # Website 	: 	http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -26,7 +26,7 @@ echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Downloading the Microsoft repository GPG keys..."
 echo -e "------------------------------------------------------------------"
-wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+cd /tmp && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 
 
 # Register the Microsoft repository GPG keys
