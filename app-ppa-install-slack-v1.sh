@@ -19,11 +19,35 @@ echo -e "------------------------------------------------------------------"
 echo -e " Installing Slack..."
 echo -e "------------------------------------------------------------------"
 
-
-{Code Goes Here}
+echo -e "------------------------------------------------------------------"
+echo -e "| Updating Repositories                                          |"
+echo -e "------------------------------------------------------------------"
+sudo apt-get update -y
 
 
 echo -e "------------------------------------------------------------------"
-echo -e "|                                                                |"
+echo -e "| Install Prerequisites                                          |"
+echo -e "------------------------------------------------------------------"
+dpkg -l | grep -qw gdebi-core || sudo apt-apt install -y gdebi-core 	# gdebi-core
+dpkg -l | grep -qw wget || sudo apt-get install -y \wget 				# wget
+
+
+echo -e "------------------------------------------------------------------"
+echo -e "| Downloading Slack Package                                      |"
+echo -e "------------------------------------------------------------------"
+cd /tmp && wget -O ~/slack.deb "https://downloads.slack-edge.com/linux_releases/slack-desktop-3.1.0-amd64.deb"
+
+
+
+echo -e "------------------------------------------------------------------"
+echo -e "| Installing Slack                                               |"
+echo -e "------------------------------------------------------------------"
+sudo dpkg -i ~/slack.deb
+sudo apt-get install -f
+
+
+ 
+echo -e "------------------------------------------------------------------"
+echo -e "|                       Slack Installed                          |"
 echo -e "------------------------------------------------------------------"
 
