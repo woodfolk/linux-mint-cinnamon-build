@@ -1,3 +1,5 @@
+[2019-03-15]
+
 Interactive Installs:
 [*] EULA Move Microsoft Fonts Installs to EULA Installs on Master Script 1-install-core-utilities-v1.sh
 [*] EULA Move Microsoft VS Code
@@ -27,13 +29,13 @@ CODE FIXES:
 
 [*] CODE Fix 7-install-ppa-apps-v1.sh removed app-ppa-install-cinelerra-v1.sh
 
-[] 
+
 
 APP INSTALL NEEDED FIXES:
 [*] Unetbootin
 [*] Telegram 
 [*] Brave Web Browser
-[] Slack
+[*] Slack
 
 
 Broken APP-PPA-INSTALLS
@@ -41,7 +43,7 @@ Broken APP-PPA-INSTALLS
 
 
 README FIXES
-[?] README Fix correct name format of credits
+[*] README Fix correct name format of credits
 [*] README Fix change apt to apt-get
 
 New Scripts
