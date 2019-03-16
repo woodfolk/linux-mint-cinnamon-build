@@ -183,6 +183,9 @@ echo -e "------------------------------------------------------------------"
 touch $LOGFILE $ERRORFILE
 exec 2> $ERRORFILE
 exec > >(tee -i -a $LOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
 
 #funcUserInfo    																# calling user information function
 
@@ -190,7 +193,7 @@ echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Pre-configuration settings..."
 echo -e ""
-echo -e " Master script calling 0-prep-configurations-v1.sh"
+echo -e " Master script calling 0-prep-configurations-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 0-prep-configurations-v*.sh
 
@@ -209,6 +212,8 @@ funcWelcomeBanner
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Core Utilities"
+echo -e ""
+echo -e " Master script calling 1-install-core-utilities-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 1-install-core-utilities-v*.sh
 
@@ -216,6 +221,8 @@ sh 1-install-core-utilities-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Audio and Video"
+echo -e ""
+echo -e " Master script calling 2-install-av-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 2-install-av-apps-v*.sh
 
@@ -223,6 +230,8 @@ sh 2-install-av-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Communications, Internet and Networking"
+echo -e ""
+echo -e " Master script calling 3-install-cin-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 3-install-cin-apps-v*.sh
 
@@ -230,6 +239,8 @@ sh 3-install-cin-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Office and Productivity"
+echo -e ""
+echo -e " Master script calling 4-install-offprod-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 4-install-offprod-apps-v*.sh
 
@@ -237,6 +248,8 @@ sh 4-install-offprod-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Graphics and Photography"
+echo -e ""
+echo -e " Master script calling 5-install-graphics-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 5-install-graphics-apps-v*.sh
 
@@ -244,6 +257,8 @@ sh 5-install-graphics-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Miscellaneous Applications"
+echo -e ""
+echo -e " Master script calling 6-install-misc-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 6-install-misc-apps-v*.sh
 
@@ -251,6 +266,8 @@ sh 6-install-misc-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " PPA Applications"
+echo -e ""
+echo -e " Master script calling 7-install-ppa-apps-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 7-install-ppa-apps-v*.sh
 
@@ -258,6 +275,8 @@ sh 7-install-ppa-apps-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Themes and Icons"
+echo -e ""
+echo -e " Master script calling 8-install-themes-icons-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 8-install-themes-icons-v*.sh
 
@@ -265,8 +284,10 @@ sh 8-install-themes-icons-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Snap Package Applications"
+echo -e ""
+echo -e " Master script calling 9-install-snap-packages-v*.sh"
 echo -e "------------------------------------------------------------------"
-sh 9-install-snap-packages-v*.sh
+#sh 9-install-snap-packages-v*.sh
 
 
 #echo -e "Adding $USERNAME to the vboxusers group..."
@@ -276,6 +297,8 @@ sh 9-install-snap-packages-v*.sh
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Configuring Personal Settings"
+echo -e ""
+echo -e " Master script calling app-configurations-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh app-configurations-v*.sh # $USERNAME
 
@@ -312,6 +335,8 @@ sudo apt-get autoclean -y
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " summary of what should have been installed"
+echo -e ""
+echo -e " Master script calling 0-installation-summary-v*.sh"
 echo -e "------------------------------------------------------------------"
 sh 0-installation-summary-v*.sh
 
