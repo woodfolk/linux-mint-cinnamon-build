@@ -48,3 +48,19 @@ README FIXES
 
 New Scripts
 [*] 0-install-interactive-apps-v1.sh
+
+--------------------------------------------------------------------------------
+
+[2019-03-16]
+
+CODE FIXES:
+[*] Remove libgslcbla0 from  2-install-av-apps-v1.sh
+[*] Remove libgslcbla0:i386  2-install-av-apps-v1.sh
+[*] Remove slack-desktop  3-install-cin-apps-v1.sh
+
+CODE MODIFICATIONS:
+[*] Move logfile location for /var/log to script's run folder  master-install.sh
+[] Add calling script code  master-install.sh
+
+
+
