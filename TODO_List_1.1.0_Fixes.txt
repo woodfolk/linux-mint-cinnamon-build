@@ -55,14 +55,20 @@ New Scripts
 
 CODE FIXES:
 [*] Remove libgslcbla0 from  2-install-av-apps-v1.sh
-[*] Remove libgslcbla0:i386  2-install-av-apps-v1.sh
+[*] Remove libgslcbla0:i386 from  2-install-av-apps-v1.sh
 [*] Remove slack-desktop  3-install-cin-apps-v1.sh
-[*] Remove gnucash.doc from 4-install-offprod-apps-v1.sh
+[*] Remove gnucash.doc from  4-install-offprod-apps-v1.sh
+[*] Remove virtualbox users and vboxuser group from  6-install-misc-apps-v1.sh
+[] Fix app-ppa-install-brave-v1.sh
+[] sudo add-apt-repository in all called scripts
 
 
 CODE MODIFICATIONS:
-[*] Move logfile location for /var/log to script's run folder  master-install.sh
 [] Add calling script code  master-install.sh
+[] Add logging logic to all called app-ppa-install scripts
+[*] Move logfile location for /var/log to script's run folder  master-install.sh
+[*] Add virtualbox $USER  0-install-interactive-apps-v1.sh 
+
 
 
 
