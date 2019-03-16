@@ -290,6 +290,15 @@ echo -e "------------------------------------------------------------------"
 #sh 9-install-snap-packages-v*.sh
 
 
+echo -e ""; clear; echo -e ""
+echo -e "------------------------------------------------------------------"
+echo -e " Interactive Install Package Applications"
+echo -e ""
+echo -e " Master script calling 0-install-interactive-apps-v1.sh"
+echo -e "------------------------------------------------------------------"
+sh 0-install-interactive-apps-v1.sh
+
+
 #echo -e "Adding $USERNAME to the vboxusers group..."
 #sudo adduser $USERNAME vboxusers
 
