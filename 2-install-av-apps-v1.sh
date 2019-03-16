@@ -30,10 +30,10 @@ dpkg -l | grep -qw ffmpeg || sudo apt-get install -y ffmpeg				# ffmpeg
 dpkg -l | grep -qw gtkpod || sudo apt-get install -y gtkpod				# gtkpod
 dpkg -l | grep -qw guvcview || sudo apt-get install -y guvcview		# guvcview
 ##dpkg -l | grep -qw libgsl2 || sudo apt-get install -y libgsl2		# libgsl2
-dpkg -l | grep -qw libgslcbla0 || 
-			sudo apt-get install -y libgslcbla0		 							# libgslcbla0
-dpkg -l | grep -qw libgslcbla0:i386 || 
-			sudo apt-get install -y libgslcbla0:i386 							# libgslcbla0:i386
+##dpkg -l | grep -qw libgslcbla0 || 
+##			sudo apt-get install -y libgslcbla0		 							# libgslcbla0
+##dpkg -l | grep -qw libgslcbla0:i386 || 
+##			sudo apt-get install -y libgslcbla0:i386 							# libgslcbla0:i386
 dpkg -l | grep -qw libguvcview ||
 			sudo apt-get install -y libguvcview							      # libguvcview
 
