@@ -5,8 +5,8 @@ set -e
 # Name:			master-install.sh
 # Author:		Romano Woodfolk
 # Created:		January 24, 2019
-# Modified:		March 09, 2019 (110100100)
-# Version:		1.0.0
+# Modified:		March 16, 2019 (110100100)
+# Version:		1.0.1
 # Website:   	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.1    #
@@ -39,8 +39,8 @@ set -e
 #---------------------------------------------------------------------------------#
 # varibles
     NOW=`date +%Y%m%d%H%M%S`                    # Current Date & Time Suffix
-    LOGFILE=/var/log/instlog$NOW.log         	# Script Log File
-    ERRORFILE=/var/log/errlog$NOW.log         	# Error Log File
+    LOGFILE=instlog$NOW.log							# Script Log File
+    ERRORFILE=errlog$NOW.log							# Error Log File
 #    OSTYPE="Default"                           # Default OS Ubuntu
 #    DIST="UNKNOWN"										# Distrobution
 #    VER="UNKNOWN"										# Version
