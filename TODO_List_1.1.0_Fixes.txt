@@ -59,8 +59,8 @@ CODE FIXES:
 [*] Remove slack-desktop  3-install-cin-apps-v1.sh
 [*] Remove gnucash.doc from  4-install-offprod-apps-v1.sh
 [*] Remove virtualbox users and vboxuser group from  6-install-misc-apps-v1.sh
-[] Fix app-ppa-install-brave-v1.sh
-[] sudo add-apt-repository in all called scripts
+[] Fix app-ppa-install-brave-v1.sh (script fails)
+[] Append "sudo add-apt-repository" with -y switch in all called scripts
 
 
 CODE MODIFICATIONS:
@@ -68,6 +68,34 @@ CODE MODIFICATIONS:
 [] Add logging logic to all called app-ppa-install scripts
 [*] Move logfile location for /var/log to script's run folder  master-install.sh
 [*] Add virtualbox $USER  0-install-interactive-apps-v1.sh 
+[*] Added red text to funcAreYouRoot and increase sleep from 1 to 3
+[*] Added "Let's began..." correct grammer in funcAreYouRoot
+
+Code Constuction:
+
+echo -e "------------------------------------------------------------------"
+echo -e " Creating Log files..."
+echo -e "------------------------------------------------------------------"
+# Defining Script Variables 
+	SCRPTNAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")" 
+	SCRPTNOW=`date +%Y%m%d%H%M%S`															# Current Date & Time Suffix
+	SCRPTLOGFILE=instlog$NOW.log															# Script Log File
+	SCRPTERRORFILE=errlog$NOW.log															# Error Log File
+# Creating Log Files
+	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	exec 2> $SCRPTERRORFILE
+	exec > >(tee -i -a $SCRPTLOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
+
+
+echo -e ""
+echo -e " Master script calling XXXXX"
+
+
+
+
 
 
 
