@@ -22,8 +22,8 @@ sudo apt-get update -y
 dpkg -l | grep -qw calibre || sudo apt-get install -y calibre  		# calibre
 dpkg -l | grep -qw glabels || sudo apt-get install -y glabels  		# glabels
 dpkg -l | grep -qw gnucash || sudo apt-get install -y gnucash  		# gnucash
-dpkg -l | grep -qw gnucash-doc ||
-			sudo apt-get install -y gnucash-doc  								# gnucash-doc
+##dpkg -l | grep -qw gnucash-doc ||
+##			sudo apt-get install -y gnucash-doc  								# gnucash-doc
 dpkg -l | grep -qw gramps || sudo apt-get install -y gramps  			# gramps
 dpkg -l | grep -qw homebank || sudo apt-get install -y homebank 		# homebank
 dpkg -l | grep	-qw planner || sudo apt-get install -y planner			# planner
