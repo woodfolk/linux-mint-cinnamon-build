@@ -67,11 +67,17 @@ dpkg -l | grep -qw wireshark || sudo apt-get install -y wireshark 	# wireshark
 
 
 # VirtualBox Install
+echo -e ""; clear; echo -e ""														# clear Screen
+echo -e "------------------------------------------------------------------"
+echo -e "..installing virtualbox...														"
+echo -e "------------------------------------------------------------------"
 dpkg -l | grep -qw virtualbox || sudo apt-get install -y virtualbox  # virtualbox
 dpkg -l | grep -qw virtualbox-ext-pack ||
 			sudo apt-get install -y virtualbox-ext-pack   					# virtualbox-ext-pack
 dpkg -l | grep -qw virtualbox-guest-additions-iso ||
 			sudo apt-get install -y virtualbox-guest-additions-iso		# virtualbox-guest-additions-iso
+# Adding VirtualBox users to vboxusers group
+sudo adduser $USER vboxusers
 
 
 

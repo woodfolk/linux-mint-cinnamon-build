@@ -76,11 +76,11 @@ dpkg -l | grep -qw vde2 || sudo apt-get install -y vde2					# vde2
 
 
 # Adding VirtualBox users to vboxusers group
-echo -e ""; clear; echo -e ""														# clear Screen
-echo -e "------------------------------------------------------------------"
-echo -e "..adding virtualbox users to the vboxusers group..."
-echo -e "------------------------------------------------------------------"
-sudo adduser $USER vboxusers
+##echo -e ""; clear; echo -e ""														# clear Screen
+##echo -e "------------------------------------------------------------------"
+##echo -e "..adding virtualbox users to the vboxusers group..."
+##echo -e "------------------------------------------------------------------"
+##sudo adduser $USER vboxusers
 
 
 dpkg -l | grep -qw vim || sudo apt-get install -y vim						# vim

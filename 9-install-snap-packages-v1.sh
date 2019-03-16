@@ -13,6 +13,23 @@ set -e
 # “Tessa” Cinnamon Edition an ubuntu based distributions.                         #
 #---------------------------------------------------------------------------------#
 #
+echo -e "------------------------------------------------------------------"
+echo -e " Creating Log files..."
+echo -e "------------------------------------------------------------------"
+# Defining Script Variables 
+	SCRPTNAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")" 
+	SCRPTNOW=`date +%Y%m%d%H%M%S`													# Current Date & Time Suffix
+	SCRPTLOGFILE="$SCRPTNAME"_instlog_"$SCRPTNOW".log						# Script Log File
+	SCRPTERRORFILE="$SCRPTNAME"_errlog_"$SCRPTNOW".log						# Error Log File
+# Creating Log Files
+	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	exec 2> $SCRPTERRORFILE
+	exec > >(tee -i -a $SCRPTLOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
+
+
 echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
 echo -e " Installing Snap Packages..."
