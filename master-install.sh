@@ -87,25 +87,32 @@ funcMainMenu () {
 #---------------------------------------------------------------------------------#
 funcAreYouRoot () {
     echo -e ""; clear; echo -e ""    											# clear Screen
-    echo -e "Git is require by this script. run sudo apt-get install -yq git before running"
+    echo -e "Git is require by this script. run ${FGRED}sudo apt-get install -yq git${NORMAL} before running"
     echo -e "running this script..."
     echo -e "Elevated rights are needed to run this script"
-    sleep 1
+    sleep 3
     echo -e ""; clear; echo -e ""    											# clear Screen
     if [ $USER != 'root' ]
     then
-        echo -e "YOU ARE NOT root... This script REQUIRES root access"
+        echo -e "${FGRED}YOU ARE NOT root...${NORMAL} This script REQUIRES root access"
         echo -e ""
-        echo -e "Please run sudo ./master-install.sh "
+        echo -e "Please run ${MENU}sudo ./master-install.sh${NORMAL} "
         exit 0
     else
         echo -e ""; clear; echo -e ""    										# clear Screen
-        echo -e "Your are root or have issued \sudo to run this script... Let's began "
-        echo -e "building your new system..."
+        echo -e "Your are root or have issued ${MENU}sudo${NORMAL} to run this script...  "
         echo -e ""
         echo -e ""
-        echo -e "You will be prompt to enter Elevated Rights to continue running this script"
-        echo -e "Do you want to continue running this script? yes (Y) or no (N)"
+        echo -e "Let's began building your new system..."
+        echo -e ""
+        echo -e ""
+        echo -e "You will not be prompted to enter Elevated Rights to continue running this script"
+        echo -e ""
+        echo -e ""
+        echo -e "Feel free to modified this script in any way that you feel to fit your needs"
+        echo -e ""
+        echo -e ""
+        echo -e "Now enjoy the ride"
         echo -e ""; clear; echo -e ""    										# clear Screen
     fi
 sleep 2
@@ -182,6 +189,8 @@ exec > >(tee -i -a $LOGFILE)
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
 echo -e " Pre-configuration settings..."
+echo -e ""
+echo -e " Master script calling 0-prep-configurations-v1.sh"
 echo -e "------------------------------------------------------------------"
 sh 0-prep-configurations-v*.sh
 
