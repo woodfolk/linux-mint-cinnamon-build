@@ -5,8 +5,8 @@ set -e
 # Name:			app-ppa-install-lmt-v1.sh
 # Author:		Romano Woodfolk
 # Created:		March 05, 2019
-# Modified:		March 09, 2019 (110100100)
-# Version:		1.0.0
+# Modified:		March 16, 2019 (110100100)
+# Version:		1.0.1
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.1    #
@@ -22,6 +22,23 @@ set -e
 # https://www.fossmint.com/things-to-do-after-installing-linux-mint-19/
 # https://itsfoss.com/reduce-overheating-laptops-linux/
 # 
+echo -e "------------------------------------------------------------------"
+echo -e " Creating Log files..."
+echo -e "------------------------------------------------------------------"
+# Defining Script Variables 
+	SCRPTNAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")" 
+	SCRPTNOW=`date +%Y%m%d%H%M%S`													# Current Date & Time Suffix
+	SCRPTLOGFILE="$SCRPTNAME"_instlog_"$SCRPTNOW".log						# Script Log File
+	SCRPTERRORFILE="$SCRPTNAME"_errlog_"$SCRPTNOW".log						# Error Log File
+# Creating Log Files
+	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	exec 2> $SCRPTERRORFILE
+	exec > >(tee -i -a $SCRPTLOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
+
+
 echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
 echo -e " Installing Laptop Mode Tools..."
@@ -39,7 +56,7 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
 echo -e " Adding PPA repository"
 echo -e "------------------------------------------------------------------"
-sudo add-apt-repository ppa:ubuntuhandbook1/apps
+sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 
 
 echo -e "------------------------------------------------------------------"

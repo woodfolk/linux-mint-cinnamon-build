@@ -5,7 +5,7 @@ set -e
 # Name:			app-ppa-install-skype-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 30, 2019
-# Modified:		March 01, 2019 (110100100)
+# Modified:		March 16, 2019 (110100100)
 # Version:		1.0.0
 # Website 	: 	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -16,11 +16,29 @@ set -e
 # Reference the following website(s):
 # https://www.linuxbabe.com/ubuntu/install-skype-ubuntu-18-04-lts-desktop
 #
+echo -e "------------------------------------------------------------------"
+echo -e " Creating Log files..."
+echo -e "------------------------------------------------------------------"
+# Defining Script Variables 
+	SCRPTNAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")" 
+	SCRPTNOW=`date +%Y%m%d%H%M%S`													# Current Date & Time Suffix
+	SCRPTLOGFILE="$SCRPTNAME"_instlog_"$SCRPTNOW".log						# Script Log File
+	SCRPTERRORFILE="$SCRPTNAME"_errlog_"$SCRPTNOW".log						# Error Log File
+# Creating Log Files
+	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	exec 2> $SCRPTERRORFILE
+	exec > >(tee -i -a $SCRPTLOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
+
+
 echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
 echo -e "..installing Skype...                                             "
 echo -e "------------------------------------------------------------------"
 echo -e ""
+
 
 # enable multiarch for better 64-bit compatibility
 echo -e "------------------------------------------------------------------"

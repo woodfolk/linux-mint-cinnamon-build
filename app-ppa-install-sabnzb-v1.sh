@@ -5,8 +5,8 @@ set -e
 # Name:			app-ppa-install-sabnzbd-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 26, 2019
-# Modified:		March 09, 2019 (110100100)
-# Version:		1.0.0
+# Modified:		March 16, 2019 (110100100)
+# Version:		1.0.1
 # Website:	 	http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.1	 #
@@ -14,6 +14,23 @@ set -e
 #---------------------------------------------------------------------------------#
 #https://sabnzbd.org/wiki/installation/install-ubuntu-repo
 #
+echo -e "------------------------------------------------------------------"
+echo -e " Creating Log files..."
+echo -e "------------------------------------------------------------------"
+# Defining Script Variables 
+	SCRPTNAME="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")" 
+	SCRPTNOW=`date +%Y%m%d%H%M%S`													# Current Date & Time Suffix
+	SCRPTLOGFILE="$SCRPTNAME"_instlog_"$SCRPTNOW".log						# Script Log File
+	SCRPTERRORFILE="$SCRPTNAME"_errlog_"$SCRPTNOW".log						# Error Log File
+# Creating Log Files
+	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	exec 2> $SCRPTERRORFILE
+	exec > >(tee -i -a $SCRPTLOGFILE)
+echo -e "------------------------------------------------------------------"
+echo -e " Log files created..."
+echo -e "------------------------------------------------------------------"
+
+
 echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "------------------------------------------------------------------"
 echo -e " Enabling multiverse and universe repository...                                        "
@@ -29,8 +46,8 @@ dpkg -l | grep -qw software-properties-common ||
 echo -e "------------------------------------------------------------------"
 echo -e " Adding SABnzb PPA...                                             "
 echo -e "------------------------------------------------------------------"
-sudo add-apt-repository ppa:jcfp/nobetas
-sudo add-apt-repository ppa:jcfp/sab-addons
+sudo add-apt-repository -y ppa:jcfp/nobetas
+sudo add-apt-repository -y ppa:jcfp/sab-addons
 
 
 echo -e "------------------------------------------------------------------"
