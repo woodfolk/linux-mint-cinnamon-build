@@ -36,8 +36,8 @@ dpkg -l | grep -qw putty-tools ||
 			sudo apt-get install -y putty-tools 								# putty-tools
 dpkg -l | grep -qw pterm || sudo apt-get install -y pterm				# pterm
 ##dpkg -l | grep	-qw slack || sudo apt-get install -y slack				# slack
-dpkg -l | grep	-qw slack-desktop ||
-			sudo apt-get install -y slack-desktop								# slack-desktop
+##dpkg -l | grep	-qw slack-desktop ||
+##			sudo apt-get install -y slack-desktop								# slack-desktop
 
 
 echo -e ""; clear; echo -e ""														# clear Screen
