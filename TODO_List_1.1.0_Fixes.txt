@@ -107,3 +107,12 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_C
 sudo apt update
 
 sudo apt install brave-browser brave-keyring
+
+--------------------------------------------------------------------------------
+
+[2019-03-17]
+
+CODE FIXES:
+
+[] Fix Logging error of app-ppa-install-*-v*.sh 
+
