@@ -50,7 +50,9 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Changing directory ownership to $USER                                           "
 echo -e "---------------------------------------------------------------------------------"
-sudo chown $USER.$USER .*
+sudo chown $USER.$USER ~/.*
+sudo chown $USER.$USER ~/*
+sudo chown $USER.$USER ../*
 sudo chown $USER.$USER *
 
 #[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
