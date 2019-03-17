@@ -61,9 +61,8 @@ echo -e "------------------------------------------------------------------"
 	SCRPTLOGFILE="$SCRPTNAME"_instlog_"$SCRPTNOW".log						# Script Log File
 	SCRPTERRORFILE="$SCRPTNAME"_errlog_"$SCRPTNOW".log						# Error Log File
 # Creating Log Files
-	touch $SCRPTLOGFILE $SCRPTERRORFILE
+	touch $SCRPTERRORFILE
 	exec 2> $SCRPTERRORFILE
-	exec > >(tee -i -a $SCRPTLOGFILE)
 echo -e "------------------------------------------------------------------"
 echo -e " Log files created..."
 echo -e "------------------------------------------------------------------"

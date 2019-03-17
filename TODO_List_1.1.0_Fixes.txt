@@ -114,5 +114,5 @@ sudo apt install brave-browser brave-keyring
 
 CODE FIXES:
 
-[] Fix Logging error of app-ppa-install-*-v*.sh 
+[*] Fix Logging error of app-ppa-install-*-v*.sh 
 
