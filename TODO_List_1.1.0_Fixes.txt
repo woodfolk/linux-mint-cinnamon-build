@@ -115,8 +115,8 @@ sudo apt install brave-browser brave-keyring
 CODE FIXES:
 
 [*] Fix Logging error of app-ppa-install-*-v*.sh 
-[] Add logic to test for $USER and $GROUP app-ppa-install-kvm-v1.shbruc3l33
-
+[] Add logic to test for $USER and $GROUP app-ppa-install-kvm-v1.sh
+[] Add logic to test for ln links app-ppa-install-telegram-v1.vr.sh
 
 Broken Scripts
 [] app-ppa-install-brave-v1.sh
