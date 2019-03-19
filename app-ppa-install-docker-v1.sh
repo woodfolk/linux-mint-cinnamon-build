@@ -56,7 +56,7 @@ echo -e "------------------------------------------------------------------"
 echo -e " Adding the Docker PPA repository key..."
 echo -e "------------------------------------------------------------------"
 wget -O - https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" > /etc/apt/sources.list.d/docker.list
 
 echo -e "------------------------------------------------------------------"
 echo -e " Updating repository database..."
