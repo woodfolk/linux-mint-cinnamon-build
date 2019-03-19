@@ -39,14 +39,14 @@ echo -e "------------------------------------------------------------------"
 echo -e "------------------------------------------------------------------"
 echo -e " Downloading OceanAudio...                                         "
 echo -e "------------------------------------------------------------------"
-cd /tmp wget http://www.ocenaudio.com/downloads/ocenaudio_debian9_64.deb
+cd /tmp && wget http://www.ocenaudio.com/downloads/ocenaudio_debian9_64.deb
 
 
 # downloading Simplenote
 echo -e "------------------------------------------------------------------"
 echo -e " Installing OceanAudio...                                          "
 echo -e "------------------------------------------------------------------"
-sudo dpkg -i ocenaudio_debian9_64.deb
+sudo gdebi --n ocenaudio_debian9_64.deb
 
 
 echo -e "------------------------------------------------------------------"

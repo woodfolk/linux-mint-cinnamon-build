@@ -122,7 +122,7 @@ Broken Scripts
 [] app-ppa-install-v1.sh
 [*] app-ppa-install-brave-v1.sh
 [*] app-ppa-install-docker-v1.sh
-[] app-ppa-install-oceanaudio-v1.sh
+[*] app-ppa-install-oceanaudio-v1.sh
 [] app-ppa-install-sabnzbd-v1.sh
 [] app-ppa-install-slack-v*.sh
 
