@@ -5,8 +5,8 @@ set -e
 # Name:			app-ppa-install-brave-v1.sh
 # Author:		Romano Woodfolk
 # Created:		March 15, 2019
-# Modified:		March 15, 2019 (110100100)
-# Version:		1.0.0
+# Modified:		March 19, 2019 (110100100)
+# Version:		1.0.1
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.1    #
@@ -46,7 +46,7 @@ echo -e "------------------------------------------------------------------"
 echo -e " Installing Brave Web Browser..."
 echo -e "------------------------------------------------------------------"
 source /etc/os-release
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ bionic main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-bionic.list
 
 
 echo -e "------------------------------------------------------------------"
