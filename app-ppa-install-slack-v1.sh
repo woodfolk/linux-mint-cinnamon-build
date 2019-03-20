@@ -5,7 +5,7 @@ set -e
 # Name:			app-ppa-install-slack-v1.sh
 # Author:		Romano Woodfolk
 # Created:		March 15, 2019
-# Modified:		March 16, 2019 (110100100)
+# Modified:		March 20, 2019 (110100100)
 # Version:		1.0.1
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -43,8 +43,8 @@ sudo apt-get update -y
 echo -e "------------------------------------------------------------------"
 echo -e "| Install Prerequisites                                          |"
 echo -e "------------------------------------------------------------------"
-dpkg -l | grep -qw gdebi-core || sudo apt-apt install -y gdebi-core 	# gdebi-core
-dpkg -l | grep -qw wget || sudo apt-get install -y \wget 				# wget
+dpkg -l | grep -qw gdebi-core || sudo apt-get install -y gdebi-core 	# gdebi-core
+dpkg -l | grep -qw wget || sudo apt-get install -y wget 					# wget
 
 
 echo -e "------------------------------------------------------------------"
@@ -57,9 +57,9 @@ cd /tmp && wget -O ~/slack.deb "https://downloads.slack-edge.com/linux_releases/
 echo -e "------------------------------------------------------------------"
 echo -e "| Installing Slack                                               |"
 echo -e "------------------------------------------------------------------"
-sudo dpkg -i ~/slack.deb
-sudo apt-get install -f
-
+##sudo dpkg -i ~/slack.deb
+##sudo apt-get install -f
+sudo gdebi --n ~/slack.deb
 
  
 echo -e "------------------------------------------------------------------"

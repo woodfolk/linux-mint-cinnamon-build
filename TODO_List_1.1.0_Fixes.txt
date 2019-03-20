@@ -123,8 +123,8 @@ Broken Scripts
 [*] app-ppa-install-brave-v1.sh
 [*] app-ppa-install-docker-v1.sh
 [*] app-ppa-install-oceanaudio-v1.sh
-[] app-ppa-install-sabnzbd-v1.sh
-[] app-ppa-install-slack-v*.sh
+[*] app-ppa-install-sabnzbd-v1.sh (no errors for indepent run)
+[*] app-ppa-install-slack-v*.sh
 
 
 
