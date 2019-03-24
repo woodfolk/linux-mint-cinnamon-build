@@ -45,10 +45,10 @@ cd /tmp && wget https://zoom.us/client/latest/zoom_amd64.deb -O /tmp/zoom_instal
 echo -e "------------------------------------------------------------------"
 echo -e " Installing Zoom Meeting Client...                                "
 echo -e "------------------------------------------------------------------"
-dpkg -i /tmp/zoom_install.deb
+gdebi --n /tmp/zoom_install.deb
 
 
 
 echo -e "------------------------------------------------------------------"
-echo -e "|                  Simplenote installed                          |"
+echo -e "|              Zoom Meeting Client installed                     |"
 echo -e "------------------------------------------------------------------"
