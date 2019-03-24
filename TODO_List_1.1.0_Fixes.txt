@@ -119,7 +119,7 @@ CODE FIXES:
 [] Add logic to test for ln links app-ppa-install-telegram-v1.vr.sh
 
 Broken Scripts
-[] app-ppa-install-v1.sh
+[?] app-ppa-install-v1.sh
 [*] app-ppa-install-brave-v1.sh
 [*] app-ppa-install-docker-v1.sh
 [*] app-ppa-install-oceanaudio-v1.sh
@@ -127,6 +127,8 @@ Broken Scripts
 [*] app-ppa-install-slack-v*.sh
 
 
-
+[2019-03-24]
+Broken Scripts
+[] app-ppa-install-zoom-v1.sh
 
 
