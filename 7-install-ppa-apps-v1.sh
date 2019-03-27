@@ -5,7 +5,7 @@ set -e
 # Name:			7-install-ppa-apps-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 26, 2019
-# Modified:		March 16, 2019 (110100100)
+# Modified:		March 26, 2019 (110100100)
 # Version:		1.0.1
 # Website:  	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -82,14 +82,6 @@ sh app-ppa-install-chrome-v*.sh
 
 
 #---------------------------------------------------------------------------------#
-#	Installing Microsoft Visual Studio Code                                        #
-#---------------------------------------------------------------------------------#
-##echo -e ""
-##echo -e " PPA-APP-INSTALL script calling app-ppa-install-code-v*.sh"
-##sh app-ppa-install-code-v*.sh
-
-
-#---------------------------------------------------------------------------------#
 #	Installing Docker                                                              #
 #---------------------------------------------------------------------------------#
 echo -e ""
@@ -110,7 +102,7 @@ sh app-ppa-install-etcher-v*.sh
 #---------------------------------------------------------------------------------#
 echo -e ""
 echo -e " PPA-APP-INSTALL script calling app-ppa-install-glances-v*.sh"
-sh app-ppa-install-glances-v*.sh
+##sh app-ppa-install-glances-v*.sh
 
 
 #---------------------------------------------------------------------------------#
@@ -194,14 +186,6 @@ sh app-ppa-install-pithos-v*.sh
 
 
 #---------------------------------------------------------------------------------#
-#	Installing Microsoft PowerShell                                                #
-#---------------------------------------------------------------------------------#
-#echo -e ""
-#echo -e " PPA-APP-INSTALL script calling app-ppa-install-powershell-v*.sh"
-##sh app-ppa-install-powershell-v*.sh
-
-
-#---------------------------------------------------------------------------------#
 #	Installing Python                                                              #
 #---------------------------------------------------------------------------------#
 echo -e ""
@@ -250,14 +234,6 @@ sh app-ppa-install-simplescreenrecorder-v*.sh
 
 
 #---------------------------------------------------------------------------------#
-#	Installing Skype                                                               #
-#---------------------------------------------------------------------------------#
-##echo -e ""
-##echo -e " PPA-APP-INSTALL script calling app-ppa-install-skype-v*.sh"
-##sh app-ppa-install-skype-v*.sh
-
-
-#---------------------------------------------------------------------------------#
 #	Installing Slack                                                               #
 #---------------------------------------------------------------------------------#
 echo -e ""
@@ -279,14 +255,6 @@ sh app-ppa-install-slack-v*.sh
 echo -e ""
 echo -e " PPA-APP-INSTALL script calling app-ppa-install-stacer-v*.sh"
 sh app-ppa-install-stacer-v*.sh
-
-
-#---------------------------------------------------------------------------------#
-#	Installing Sublime Text                                                        #
-#---------------------------------------------------------------------------------#
-##echo -e ""
-##echo -e " PPA-APP-INSTALL script calling app-ppa-install-sublime-v*.sh"
-##sh app-ppa-install-sublime-v*.sh
 
 
 #---------------------------------------------------------------------------------#
@@ -327,14 +295,6 @@ sh app-ppa-install-telegram-v*.sh
 echo -e ""
 echo -e " PPA-APP-INSTALL script calling app-ppa-install-unetbootin-v*.sh"
 sh app-ppa-install-unetbootin-v*.sh
-
-
-#---------------------------------------------------------------------------------#
-#	Installing VirtualBox                                                          #
-#---------------------------------------------------------------------------------#
-##echo -e ""
-##echo -e " PPA-APP-INSTALL script calling app-ppa-install-virtualbox-v*.sh"
-##sh app-ppa-install-virtualbox-v*.sh # $USERNAME ## $USER
 
 
 #---------------------------------------------------------------------------------#
@@ -401,3 +361,33 @@ echo -e  "------------------------------------------------------------------"
 #
 ###################################################################################
 ###################################################################################
+#---------------------------------------------------------------------------------#
+#	Installing Microsoft Visual Studio Code                                        #
+#---------------------------------------------------------------------------------#
+##echo -e ""
+##echo -e " PPA-APP-INSTALL script calling app-ppa-install-code-v*.sh"
+##sh app-ppa-install-code-v*.sh
+#---------------------------------------------------------------------------------#
+#	Installing Microsoft PowerShell                                                #
+#---------------------------------------------------------------------------------#
+#echo -e ""
+#echo -e " PPA-APP-INSTALL script calling app-ppa-install-powershell-v*.sh"
+##sh app-ppa-install-powershell-v*.sh
+#---------------------------------------------------------------------------------#
+#	Installing Skype                                                               #
+#---------------------------------------------------------------------------------#
+##echo -e ""
+##echo -e " PPA-APP-INSTALL script calling app-ppa-install-skype-v*.sh"
+##sh app-ppa-install-skype-v*.sh
+#---------------------------------------------------------------------------------#
+#	Installing Sublime Text                                                        #
+#---------------------------------------------------------------------------------#
+##echo -e ""
+##echo -e " PPA-APP-INSTALL script calling app-ppa-install-sublime-v*.sh"
+##sh app-ppa-install-sublime-v*.sh
+#---------------------------------------------------------------------------------#
+#	Installing VirtualBox                                                          #
+#---------------------------------------------------------------------------------#
+##echo -e ""
+##echo -e " PPA-APP-INSTALL script calling app-ppa-install-virtualbox-v*.sh"
+##sh app-ppa-install-virtualbox-v*.sh # $USERNAME ## $USER
