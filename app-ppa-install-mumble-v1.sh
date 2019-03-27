@@ -4,7 +4,7 @@ set -e
 # Name:			app-ppa-install-mumble-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 26, 2019
-# Modified:		March 16, 2019 (110100100)
+# Modified:		March 26, 2019 (110100100)
 # Version:		1.0.1
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -46,13 +46,13 @@ sudo apt-get update -y
 echo -e "------------------------------------------------------------------"
 echo -e " Installing mumble client..." 
 echo -e "------------------------------------------------------------------"
-dpkg -l | grep -qw mumble || sudo apt-get install mumble
+dpkg -l | grep -qw mumble || sudo apt-get install -y mumble
 
 
 echo -e "------------------------------------------------------------------"
 echo -e " Installing mumble server (Murmur)..." 
 echo -e "------------------------------------------------------------------"
-dpkg -l | grep -qw mumble-server || sudo apt-get install mumble-server
+dpkg -l | grep -qw mumble-server || sudo apt-get install -y mumble-server
 
 
 echo -e "------------------------------------------------------------------"
