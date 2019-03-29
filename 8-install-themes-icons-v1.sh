@@ -5,7 +5,7 @@ set -e
 # Name:			8-install-themes-icons-v1.sh
 # Author:		Romano Woodfolk
 # Created:		January 26, 2019
-# Modified:		February 28, 2019 (110100100)
+# Modified:		March 29, 2019 (110100100)
 # Version:		1.0.0
 # Website:	 	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -76,7 +76,7 @@ sh install-theme-arc-colora-collection-3.4.v*.sh
 #---------------------------------------------------------------------------------#
 #	Installing Arc Colora themes                                                   #
 #---------------------------------------------------------------------------------#
-sh install-theme-arc-colora-collection-3.6.v*.sh
+sh install-theme-arc-colora-collection-3.6-v*.sh
 
 
 #---------------------------------------------------------------------------------#
