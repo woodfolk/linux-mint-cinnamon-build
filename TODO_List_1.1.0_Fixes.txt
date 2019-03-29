@@ -140,3 +140,7 @@ Broken Scripts:
 Modified Script:
 [*] app-ppa-install-mumber-v1.sh add -y switch to apt-get install
 
+[2019-03-29]
+
+Broken Scripts:
+[] install-arc-flatabulous-theme-v1.sh
