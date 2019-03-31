@@ -22,8 +22,8 @@ echo -e "------------------------------------------------------------------"
 #---------------------------------------------------------------------------------#
 #	Installing Arc-flatabulous theme                                               #
 #---------------------------------------------------------------------------------#
-sh install-arc-flatabulous-theme-v*.sh
-
+##sh install-arc-flatabulous-theme-v*.sh
+# Broken beyond my troubleshooting skills
 
 #---------------------------------------------------------------------------------#
 #	Installing Breeze Cursor theme                                                 #
