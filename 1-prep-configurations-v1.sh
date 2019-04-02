@@ -5,7 +5,7 @@ set -e
 # Name:			1-prep-configurations-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 19, 2019
-# Modified:		March 01, 2019 (110100100)
+# Modified:		April 02, 2019 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -51,7 +51,7 @@ fi
 git init
 git config --global user.name "Romano woodfolk"
 git config --global user.email "woodfolk@gmail.com"
-sudo git config --system core.editor nano
+sudo git config --system core.editor "gedit --wait --new-window"
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=100000'
 git config --global push.default simple
