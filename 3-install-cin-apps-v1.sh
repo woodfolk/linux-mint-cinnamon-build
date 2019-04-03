@@ -35,7 +35,7 @@ dpkg -l | grep -qw putty-doc || sudo apt-get install -y putty-doc 	# putty-doc
 dpkg -l | grep -qw putty-tools ||
 			sudo apt-get install -y putty-tools 								# putty-tools
 dpkg -l | grep -qw pterm || sudo apt-get install -y pterm				# pterm
-##dpkg -l | grep	-qw slack || sudo apt-get install -y slack				# slack
+##dpkg -l | grep	-qw slack || sudo apt-get install -y slack			# slack
 ##dpkg -l | grep	-qw slack-desktop ||
 ##			sudo apt-get install -y slack-desktop								# slack-desktop
 

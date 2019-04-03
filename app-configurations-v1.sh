@@ -48,7 +48,8 @@ git init
 git config --global user.name "Romano Woodfolk"
 git config --global user.email "woodfolk@gmail.com"
 #sudo git config --system core.editor nano
-sudo git config --global core.editor "atom --wait"
+#sudo git config --global core.editor "atom --wait"
+sudo git config --system core.editor "gedit --wait --new-window"
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=100000'
 git config --global push.default simple
