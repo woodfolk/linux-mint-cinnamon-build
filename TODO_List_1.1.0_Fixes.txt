@@ -149,3 +149,10 @@ Broken Scripts:
 [2019-04-02] 
 Modified Scripts:
 [] 1-prep-configurations-v1.sh
+
+[2019-04-05]
+
+[*] Found mistake in app-ppa-install-brave-v1 script
+
+
+
