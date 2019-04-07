@@ -154,5 +154,10 @@ Modified Scripts:
 
 [*] Found mistake in app-ppa-install-brave-v1 script
 
+[2019-04-07]
+
+[] Fix app-ppa-install-sabnzbd-v1.sh
+[] Fix 0-prep-configurations-v1.sh
+
 
 
