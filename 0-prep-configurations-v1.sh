@@ -5,7 +5,7 @@ set -e
 # Name:			0-prep-configurations-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 04, 2019
-# Modified:		March 14, 2019 (110100100)
+# Modified:		April 07, 2019 (110100100)
 # Version:		1.0.0
 # Website 	: 	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -50,10 +50,13 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Changing directory ownership to $USER                                           "
 echo -e "---------------------------------------------------------------------------------"
-sudo chown $USER.$USER ~/.*
-sudo chown $USER.$USER ~/*
-sudo chown $USER.$USER ../*
+#cd ~
 sudo chown $USER.$USER *
+sudo chown $USER.$USER .*
+sudo chown $USER.$USER ~/*
+sudo chown $USER.$USER ~/.*
+sudo chown $USER.$USER ../*
+sudo chown $USER.$USER ../.*
 
 #[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
 
