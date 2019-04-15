@@ -5,8 +5,8 @@ set -e
 # Name:			app-ppa-install-sabnzbd-v1.sh
 # Author:		Romano Woodfolk
 # Created:		February 26, 2019
-# Modified:		March 16, 2019 (110100100)
-# Version:		1.0.1
+# Modified:		April 10, 2019 (110100100)
+# Version:		1.0.2
 # Website:	 	http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.1	 #
@@ -38,8 +38,8 @@ echo -e "------------------------------------------------------------------"
 # multiverse and universe repository are enabled by defauld on Linux Mint
 dpkg -l | grep -qw software-properties-common ||
 			sudo apt-get install -y software-properties-common				# software-properties-common
-# sudo add-apt-repository multiverse
-# sudo add-apt-repository universe
+sudo add-apt-repository multiverse
+sudo add-apt-repository universe
 
 
 echo -e "------------------------------------------------------------------"
@@ -47,6 +47,7 @@ echo -e " Adding SABnzb PPA...                                             "
 echo -e "------------------------------------------------------------------"
 sudo add-apt-repository -y ppa:jcfp/nobetas
 sudo add-apt-repository -y ppa:jcfp/sab-addons
+
 
 
 echo -e "------------------------------------------------------------------"
