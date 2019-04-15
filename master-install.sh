@@ -5,7 +5,7 @@ set -e
 # Name:			master-install.sh
 # Author:		Romano Woodfolk
 # Created:		January 24, 2019
-# Modified:		March 16, 2019 (110100100)
+# Modified:		April 15, 2019 (110100100)
 # Version:		1.0.1
 # Website:   	http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -177,6 +177,8 @@ echo -e ""; clear; echo -e ""
 #=================================================================================#
 funcAreYouRoot																	# calling check for root function
 
+funcUserInfo																	# collecting user data for scripts
+
 echo -e "------------------------------------------------------------------"
 echo -e " Creating Log files..."
 echo -e "------------------------------------------------------------------"
@@ -195,7 +197,7 @@ echo -e " Pre-configuration settings..."
 echo -e ""
 echo -e " Master script calling 0-prep-configurations-v*.sh"
 echo -e "------------------------------------------------------------------"
-sh 0-prep-configurations-v*.sh
+sh 0-prep-configurations-v*.sh $USERNAME
 
 
 echo -e ""; clear; echo -e ""
@@ -309,7 +311,7 @@ echo -e " Configuring Personal Settings"
 echo -e ""
 echo -e " Master script calling app-configurations-v*.sh"
 echo -e "------------------------------------------------------------------"
-sh app-configurations-v*.sh # $USERNAME
+sh app-configurations-v*.sh $USERNAME
 
 
 echo -e ""; clear; echo -e ""
