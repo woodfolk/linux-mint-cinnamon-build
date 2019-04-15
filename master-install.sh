@@ -177,7 +177,7 @@ echo -e ""; clear; echo -e ""
 #=================================================================================#
 funcAreYouRoot																	# calling check for root function
 
-funcUserInfo																	# collecting user data for scripts
+#funcUserInfo																	# collecting user data for scripts
 
 echo -e "------------------------------------------------------------------"
 echo -e " Creating Log files..."
@@ -189,7 +189,7 @@ echo -e "------------------------------------------------------------------"
 echo -e " Log files created..."
 echo -e "------------------------------------------------------------------"
 
-#funcUserInfo    																# calling user information function
+funcUserInfo    																# calling user information function
 
 echo -e ""; clear; echo -e ""
 echo -e "------------------------------------------------------------------"
