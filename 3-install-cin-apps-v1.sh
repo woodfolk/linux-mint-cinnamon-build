@@ -35,6 +35,12 @@ dpkg -l | grep -qw putty-doc || sudo apt-get install -y putty-doc 	# putty-doc
 dpkg -l | grep -qw putty-tools ||
 			sudo apt-get install -y putty-tools 								# putty-tools
 dpkg -l | grep -qw pterm || sudo apt-get install -y pterm				# pterm
+
+dpkg -l | grep -qw sabnzbdplus || 
+			sudo apt-get install -y sabnzbdplus									# sabnzbdplus
+dpkg -l | grep -qw python-sabyenc || 
+			sudo apt-get install -y python-sabyenc								# python-sabyenc
+
 ##dpkg -l | grep	-qw slack || sudo apt-get install -y slack			# slack
 ##dpkg -l | grep	-qw slack-desktop ||
 ##			sudo apt-get install -y slack-desktop								# slack-desktop
