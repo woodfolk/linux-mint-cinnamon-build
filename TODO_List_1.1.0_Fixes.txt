@@ -148,7 +148,7 @@ Broken Scripts:
 
 [2019-04-02] 
 Modified Scripts:
-[] 1-prep-configurations-v1.sh
+[*] 1-prep-configurations-v1.sh
 
 [2019-04-05]
 
@@ -156,8 +156,11 @@ Modified Scripts:
 
 [2019-04-07]
 
-[] Fix app-ppa-install-sabnzbd-v1.sh
-[] Fix 0-prep-configurations-v1.sh
+[*] Fix app-ppa-install-sabnzbd-v1.sh (BROKEN DO NOT USE)
+[*] Fix 0-prep-configurations-v1.sh
 
+[2019-04-15]
+
+Freezing Code 2019-04-15-18-48-30
 
 
